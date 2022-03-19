@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use DB;
+use App\Employee;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class PelangganController extends Controller
+{
+    public function index(){
+        $pelanggan = DB::table('pelanggans')->get();
+        return view('pelanggan', compact('pelanggan'));
+    }
+}
