@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
 
 class PelangganSeeder extends Seeder
 {
@@ -15,7 +15,12 @@ class PelangganSeeder extends Seeder
     public function run()
     {
         DB::table('pelanggans')->insert([
-            'id' => '2',
+            'nama' => 'As`ad',
+            'jenis_kelamin' => 'Pria',
+            'alamat' => 'Lamongan',
+            'nohp' => '0812-3518-4908'
+        ]);
+        DB::table('pelanggans')->insert([
             'nama' => 'Adi',
             'jenis_kelamin' => 'Pria',
             'alamat' => 'Malang',
