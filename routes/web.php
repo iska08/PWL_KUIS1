@@ -23,3 +23,5 @@ Route::get('/index', function () {
 Auth::routes();
 Route::get('/barang', [App\Http\Controllers\BarangController::class, 'index'])->name('barang');
 Route::get('/pelanggan', [App\Http\Controllers\PelangganController::class, 'index'])->name('pelanggan');
+Route::get('/pegawai', [App\Http\Controllers\PegawaiController::class, 'index'])->name('pegawai');
+Route::get('/supplier', [App\Http\Controllers\SupplierController::class, 'index'])->name('supplier');
