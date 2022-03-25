@@ -21,7 +21,7 @@ class CreateBarangsTable extends Migration
             $table->string('tahun_terbit');
             $table->integer('harga');
             $table->integer('stok');
-            $table->string('sinopsis');
+            $table->timestamps();
         });
     }
 
